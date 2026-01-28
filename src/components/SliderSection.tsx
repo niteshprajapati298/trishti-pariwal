@@ -1,0 +1,112 @@
+"use client"; // Client component needed for state/effects
+
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import styles from './SliderSection.module.css';
+
+interface SlideData {
+    title: string;
+    description: string;
+    imageSrc: string;
+    buttonText: string;
+}
+
+const originalSlides: SlideData[] = [
+    {
+        title: "Dignissim duis ante",
+        description: "Porta aliquet elit quisque dictum magnis. Praesent faucibus sociis tellus euismod metus hendrerit nec. Tempus aenean parturient integer.",
+        imageSrc: "/assets/pencils_cup_1769575198083.png",
+        buttonText: "Learn More"
+    },
+    {
+        title: "Creative Workspace",
+        description: "Optimized for productivity and style. Our workspaces are designed to inspire creativity and foster collaboration among team members.",
+        imageSrc: "/assets/desk_setup_1769575212232.png",
+        buttonText: "View Setup"
+    },
+    {
+        title: "Modern Lighting",
+        description: "Illuminate your ideas with our premium lighting solutions. Adjustable, stylish, and perfect for any modern office environment.",
+        imageSrc: "/assets/orange_lamp_1769577532378.png",
+        buttonText: "Explore Lights"
+    }
+];
+
+// Clone the first slide to the end for seamless looping
+const slides = [...originalSlides, originalSlides[0]];
+
+export default function SliderSection() {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(true);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prev) => prev + 1);
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    useEffect(() => {
+        // Check if we've reached the cloned last slide
+        if (currentIndex === slides.length - 1) {
+            // Disable transition and snap back to 0 after the slide animation completes
+            const timeout = setTimeout(() => {
+                setIsTransitioning(false);
+                setCurrentIndex(0);
+            }, 500); // Must match CSS transition duration
+
+            return () => clearTimeout(timeout);
+        }
+
+        // Checking if we are at 0 and transition is off (snapped back)
+        if (currentIndex === 0 && !isTransitioning) {
+            // Re-enable transitions for the next slide opacity/movement
+            // Use double RAF to ensure DOM has painted the snap
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    setIsTransitioning(true);
+                });
+            });
+        }
+    }, [currentIndex, isTransitioning]);
+
+    return (
+        <section className={styles.section}>
+            <div className="container">
+                <div className={styles.sliderContainer}>
+                    {slides.map((slide, index) => (
+                        <div
+                            key={index}
+                            className={`${styles.slide} ${index === currentIndex ? styles.active : ''}`}
+                            style={{
+                                transform: `translateX(${(index - currentIndex) * 100}%)`,
+                                transition: isTransitioning ? 'transform 0.5s ease-in-out' : 'none'
+                            }}
+                        >
+                            <div className={styles.grid}>
+                                <div className={styles.imageWrapper}>
+                                    <div className={styles.imageFrame}>
+                                        <Image
+                                            src={slide.imageSrc}
+                                            alt={slide.title}
+                                            width={500}
+                                            height={500}
+                                            className={styles.image}
+                                        />
+                                    </div>
+                                </div>
+                                <div className={styles.content}>
+                                    <div className="gradient-line"></div>
+                                    <h2 className={styles.title}>{slide.title}</h2>
+                                    <p className={styles.description}>{slide.description}</p>
+                                    <button className="btn btn-primary">{slide.buttonText}</button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}

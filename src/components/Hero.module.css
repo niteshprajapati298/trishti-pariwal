@@ -1,0 +1,70 @@
+.hero {
+    background: var(--coral);
+    min-height: 92vh;
+    /* Increased from 80vh to nearly full screen */
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+/* Optional: Subtle diagonal lines or texture overlay could go here */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    z-index: 1;
+    /* Above background */
+    width: 100%;
+}
+
+.heading {
+    font-size: 3.5rem;
+    color: white;
+    /* Override default heading color */
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 500px;
+}
+
+.imageFrame {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: rotate(-2deg);
+    /* Slight tilt for style */
+}
+
+.image {
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 4rem 1.5rem;
+    }
+
+    .subheading {
+        margin: 0 auto 2.5rem;
+    }
+
+    .imageFrame {
+        transform: none;
+        margin-top: 2rem;
+    }
+}

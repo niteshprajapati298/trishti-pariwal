@@ -1,0 +1,34 @@
+.section {
+    background: white;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-align: center;
+}
+
+.value {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--heading);
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #999;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}

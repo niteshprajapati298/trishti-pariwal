@@ -1,66 +1,44 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Hero from '@/components/Hero';
+import FeatureSection from '@/components/FeatureSection';
+import StatsSection from '@/components/StatsSection';
+import ContentSection from '@/components/ContentSection';
+import TeamSection from '@/components/TeamSection';
+import SliderSection from '@/components/SliderSection';
+import ClientMarquee from '@/components/ClientMarquee';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main>
+      <Hero />
+
+      <SliderSection />
+
+      <hr style={{ border: 'none', borderTop: '1px solid #e5e7eb', margin: 0 }} />
+
+      <ClientMarquee />
+
+      <ContentSection
+        title="Pretium imperdiet"
+        text="Turpis vel fermentum hendrerit facilisis semper ata ante quis. Erat sapien montes aliquam sapien enim nascetur ornare lectus nisl viverra nascetur aliquam."
+      />
+
+      <FeatureSection
+        title="Justo leo nec pretium"
+        description="Feugiat magnis mattis facilisis vestibulum tortor. Aliquet eu parturient sit risus amet fermentum semper. Tempor et neque felis. Urna ultricies cep quisque suscipit integer lacus gravida metus sapien sed."
+        imageSrc="/assets/orange_lamp_1769577532378.png"
+        imageAlt="Orange lamp"
+      />
+
+      <StatsSection />
+
+      <ContentSection
+        title="Our Team"
+        text="Meet the dedicated individuals behind our success."
+      />
+
+      <TeamSection />
+
+      <div style={{ height: '4rem' }}></div> {/* Spacer */}
+    </main>
   );
 }

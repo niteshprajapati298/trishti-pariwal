@@ -1,0 +1,44 @@
+.header {
+    background: rgba(255, 255, 255, 0.85);
+    /* Translucent */
+    backdrop-filter: blur(12px);
+    /* Glass effect */
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    /* Softer border */
+    padding: 1.5rem 0;
+    width: 100%;
+    position: sticky;
+    /* Make it sticky */
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    /* Very subtle shadow */
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: var(--container-width, 1140px);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    /* Larger font */
+    font-weight: 700;
+    /* Bolder */
+    background: linear-gradient(to right, var(--coral), var(--heading));
+    /* Subtle gradient text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+    text-transform: none;
+    /* Cleaner mixed case */
+    margin: 0;
+    font-family: var(--font-sans);
+}

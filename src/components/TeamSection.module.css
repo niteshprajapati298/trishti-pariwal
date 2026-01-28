@@ -1,0 +1,58 @@
+.section {
+    background: var(--gray-100);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.card {
+    text-align: center;
+}
+
+.avatarWrapper {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.avatarFrame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Since we have a composite image of 3 people, zooming in might show just one or a mashup. 
+     This is a compromise. */
+    object-position: center;
+}
+
+.name {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--heading);
+    font-weight: 400;
+}
+
+.bio {
+    color: #999;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}

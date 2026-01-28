@@ -1,0 +1,90 @@
+.section {
+    background: var(--gray-100);
+    padding: 4rem 0;
+    /* Match section padding */
+    overflow: hidden;
+    /* Hide sliding overflow */
+}
+
+.sliderContainer {
+    position: relative;
+    height: 600px;
+    /* Fixed height container to hold absolute slides. Adjust as needed responsive. */
+    /* If content height varies, this might need to be flexible or JS-calculated, but fixed is safest for simple CSS sliders */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* transition handled inline */
+    opacity: 0;
+    /* Hide inactive slides to prevent interaction/tabbing issues if needed, though translation handles visibility mostly */
+    /* For the specific "slide left" effect requested: */
+}
+
+.active {
+    opacity: 1;
+}
+
+/* Reusing grid styles from FeatureSection for consistency */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    height: 100%;
+}
+
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.imageFrame {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    max-width: 100%;
+}
+
+.image {
+    border-radius: 4px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--heading);
+}
+
+.description {
+    color: var(--foreground);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .sliderContainer {
+        height: auto;
+        min-height: 800px;
+        /* Allow more space for stacked content on mobile */
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        align-content: center;
+    }
+}
