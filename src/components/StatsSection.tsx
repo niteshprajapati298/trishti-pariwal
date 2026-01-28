@@ -6,9 +6,9 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-    { value: '500+', description: 'Eget ante nunc venenatis tristique sit rutrum purus in penatibus quam.' },
-    { value: '280', description: 'Cubilia luctus ac viverra donec euismod. Proto at dis proto proto elit.' },
-    { value: '98%', description: 'Orci phasellus in col aliquam blandit. Libero mi tortor natoque cras.' },
+    { value: '4+', description: 'Years of Experience in Content Writing & Strategy' },
+    { value: 'SEO', description: 'Expert in Keyword Research & Analytics' },
+    { value: 'Tools', description: 'Proficient in PowerBI, Tableau, & MySQL' },
 ];
 
 export default function StatsSection() {

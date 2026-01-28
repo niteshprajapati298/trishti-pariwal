@@ -13,22 +13,22 @@ interface SlideData {
 
 const originalSlides: SlideData[] = [
     {
-        title: "Dignissim duis ante",
-        description: "Porta aliquet elit quisque dictum magnis. Praesent faucibus sociis tellus euismod metus hendrerit nec. Tempus aenean parturient integer.",
+        title: "SEO Technical Content Writer",
+        description: "Sociogreek (May 2024 - Present). Writing SEO optimized content, conducting comprehensive keyword research, and developing engaging B2B SAAS strategies.",
         imageSrc: "/assets/pencils_cup_1769575198083.png",
-        buttonText: "Learn More"
+        buttonText: "See SEO Work"
     },
     {
-        title: "Creative Workspace",
-        description: "Optimized for productivity and style. Our workspaces are designed to inspire creativity and foster collaboration among team members.",
+        title: "Senior Content Writer",
+        description: "Seeds of Innocens (July 2023 - April 2024). Managed website content (Blogs, Landing Pages) and implemented social media content calendars.",
         imageSrc: "/assets/desk_setup_1769575212232.png",
-        buttonText: "View Setup"
+        buttonText: "View Strategy"
     },
     {
-        title: "Modern Lighting",
-        description: "Illuminate your ideas with our premium lighting solutions. Adjustable, stylish, and perfect for any modern office environment.",
+        title: "Content Coordinator",
+        description: "TaCa Healthcare (June 2022 - June 2023). Managed social media handles, planned corporate events, and created SEO-friendly web content.",
         imageSrc: "/assets/orange_lamp_1769577532378.png",
-        buttonText: "Explore Lights"
+        buttonText: "View Projects"
     }
 ];
 

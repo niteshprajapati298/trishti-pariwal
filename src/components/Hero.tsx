@@ -7,14 +7,14 @@ export default function Hero() {
             <div className={`container ${styles.grid}`}>
                 <div className={styles.content}>
                     <h1 className={styles.heading}>
-                        Sapien interdum <br />
-                        amet venenatis
+                        Content Strategy <br />
+                        & Data Insights
                     </h1>
                     <p className={styles.subheading}>
-                        Erat sapien luctus placerat hendrerit auctor ut sem accumsan ante convallis non sit massa et curae sed lacinia rhoncus praesent posuere.
+                        Detail-oriented professional aiming to enhance content strategy with exceptional SEO skills and analytical precision using PowerBI & Tableau.
                     </p>
                     <button className="btn btn-primary">
-                        Lorem mollis &darr;
+                        View Experience &darr;
                     </button>
                 </div>
                 <div className={styles.imageWrapper}>

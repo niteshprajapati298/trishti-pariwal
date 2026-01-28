@@ -1,0 +1,104 @@
+.section {
+    background: white;
+    padding: 4rem 0 6rem;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--heading);
+}
+
+.subtext {
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.form {
+    text-align: left;
+    background: white;
+    /* Or slightly different if section is white */
+    /* If section is white, maybe no card bg, or a border? */
+    /* Let's keep it clean */
+}
+
+.group {
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--heading);
+    font-size: 0.95rem;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: var(--gray-100);
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--mint);
+    box-shadow: 0 0 0 3px rgba(130, 201, 197, 0.2);
+    background: white;
+}
+
+.submitBtn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.successMessage {
+    padding: 3rem;
+    background: var(--gray-100);
+    border-radius: 12px;
+    animation: fadeIn 0.5s ease;
+}
+
+.successMessage h3 {
+    color: var(--coral);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.resetBtn {
+    margin-top: 2rem;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.errorMessage {
+    color: #e53e3e;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

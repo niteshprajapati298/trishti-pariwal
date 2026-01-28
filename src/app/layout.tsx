@@ -3,8 +3,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Trishti Pariwal",
-  description: "Portfolio & Personal Site",
+  title: "Trishti Pariwal | SEO Content Strategist & Data Analyst",
+  description: "Portfolio of Trishti Pariwal - Dedicated professional specializing in SEO Technical Writing, Content Strategy, and Data Analytics (PowerBI, Tableau).",
+  keywords: ["SEO Content Writer", "Data Analytics", "PowerBI", "Tableau", "Content Strategy", "Trishti Pariwal", "Public Health", "Portfolio"],
 };
 
 export default function RootLayout({

@@ -5,6 +5,7 @@ import ContentSection from '@/components/ContentSection';
 import TeamSection from '@/components/TeamSection';
 import SliderSection from '@/components/SliderSection';
 import ClientMarquee from '@/components/ClientMarquee';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   return (
@@ -18,15 +19,15 @@ export default function Home() {
       <ClientMarquee />
 
       <ContentSection
-        title="Pretium imperdiet"
-        text="Turpis vel fermentum hendrerit facilisis semper ata ante quis. Erat sapien montes aliquam sapien enim nascetur ornare lectus nisl viverra nascetur aliquam."
+        title="Professional Summary"
+        text="A dedicated and detail-oriented professional contributing abilities and skills to dynamic organizations. I specialize in enhancing content strategy through comprehensive research, keyword analysis, and new ideas, backed by a strong academic background in Public Health and Botany."
       />
 
       <FeatureSection
-        title="Justo leo nec pretium"
-        description="Feugiat magnis mattis facilisis vestibulum tortor. Aliquet eu parturient sit risus amet fermentum semper. Tempor et neque felis. Urna ultricies cep quisque suscipit integer lacus gravida metus sapien sed."
+        title="Data Analytics & Research"
+        description="Proficient in analyzing complex datasets to extract meaningful insights using PowerBI, Tableau, and MySQL. Experience includes data management for community health programs and market competitor research."
         imageSrc="/assets/orange_lamp_1769577532378.png"
-        imageAlt="Orange lamp"
+        imageAlt="Data Analytics"
       />
 
       <StatsSection />
@@ -37,6 +38,10 @@ export default function Home() {
       />
 
       <TeamSection />
+
+      <hr style={{ border: 'none', borderTop: '1px solid #e5e7eb', margin: 0 }} />
+
+      <ContactForm />
 
       <div style={{ height: '4rem' }}></div> {/* Spacer */}
     </main>
