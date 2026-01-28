@@ -27,18 +27,19 @@
 }
 
 .logo {
-    font-size: 2rem;
-    /* Larger font */
-    font-weight: 700;
-    /* Bolder */
+    font-size: 3rem;
+    /* Increase size for cursive readability */
+    font-weight: 400;
+    /* Cursive doesn't need bold usually */
     background: linear-gradient(to right, var(--coral), var(--heading));
-    /* Subtle gradient text */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: -0.5px;
+    letter-spacing: 0;
     text-transform: none;
-    /* Cleaner mixed case */
     margin: 0;
-    font-family: var(--font-sans);
+    font-family: var(--font-cursive);
+    /* Great Vibes */
+    padding-bottom: 0.5rem;
+    /* Ensure descenders don't get cut if overflow hidden */
 }

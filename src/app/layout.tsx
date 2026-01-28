@@ -1,7 +1,28 @@
 import type { Metadata } from "next";
+import { Playfair_Display, Great_Vibes, Lato } from 'next/font/google';
 import "./globals.css";
 import Header from "@/components/Header";
 import StickyContact from "@/components/StickyContact";
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+});
+
+const greatVibes = Great_Vibes({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-cursive',
+  display: 'swap',
+});
+
+const lato = Lato({
+  weight: ['300', '400', '700'],
+  subsets: ['latin'],
+  variable: '--font-lato',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Trishti Pariwal | SEO Content Strategist & Data Analyst",
@@ -16,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${lato.variable} ${playfair.variable} ${greatVibes.variable}`}>
         <Header />
         {children}
         <StickyContact />
