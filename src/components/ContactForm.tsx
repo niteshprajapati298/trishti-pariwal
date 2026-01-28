@@ -39,7 +39,12 @@ export default function ContactForm() {
             <div className="container" style={{ maxWidth: '600px' }}>
                 <div className="gradient-line" style={{ margin: '0 auto 1.5rem' }}></div>
                 <h2 className={styles.heading}>Get in Touch</h2>
-                <p className={styles.subtext}>We'd love to hear from you. Send us a message!</p>
+                <p className={styles.subtext}>
+                    Have a project in mind? Reach out! <br />
+                    <a href="mailto:trishti22@gmail.com" className={styles.link}>trishti22@gmail.com</a>
+                    <span className={styles.divider}>|</span>
+                    <a href="https://wa.me/919911641759" className={styles.link}>+91 99116 41759</a>
+                </p>
 
                 {status === 'success' ? (
                     <div className={styles.successMessage}>

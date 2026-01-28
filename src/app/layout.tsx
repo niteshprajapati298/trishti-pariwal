@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import StickyContact from "@/components/StickyContact";
 
 export const metadata: Metadata = {
   title: "Trishti Pariwal | SEO Content Strategist & Data Analyst",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <StickyContact />
       </body>
     </html>
   );

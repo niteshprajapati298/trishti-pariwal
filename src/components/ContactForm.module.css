@@ -13,6 +13,24 @@
 .subtext {
     color: #666;
     margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.link {
+    color: var(--coral);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: var(--heading);
+}
+
+.divider {
+    margin: 0 0.5rem;
+    color: #ddd;
 }
 
 .form {
