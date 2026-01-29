@@ -41,5 +41,6 @@
     font-family: var(--font-cursive);
     /* Great Vibes */
     padding-bottom: 0.5rem;
+    padding-right: 1rem;
     /* Ensure descenders don't get cut if overflow hidden */
 }

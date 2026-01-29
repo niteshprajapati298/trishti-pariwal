@@ -6,29 +6,74 @@ import styles from './SliderSection.module.css';
 
 interface SlideData {
     title: string;
-    description: string;
+    description: string[];
     imageSrc: string;
     buttonText: string;
 }
 
 const originalSlides: SlideData[] = [
     {
-        title: "SEO Technical Content Writer",
-        description: "Sociogreek (May 2024 - Present). Writing SEO optimized content, conducting comprehensive keyword research, and developing engaging B2B SAAS strategies.",
+        title: "Content Management Lead",
+        description: [
+            "Applore Technologies (Aug 2024 - Present)",
+            "Led content across web and social with clear brand direction",
+            "Managed and guided a 5–7 member content team",
+            "Defined and executed content strategy aligned with business goals",
+            "Partnered with internal stakeholders and external clients",
+            "Owned social media presence end-to-end"
+        ],
+        imageSrc: "/assets/hero_workspace_1769575183849.png",
+        buttonText: "View Leadership"
+    },
+    {
+        title: "Technical Content Lead",
+        description: [
+            "Sociogreek (May 2024 - Present)",
+            "Writing SEO optimized content for external clients",
+            "Comprehensive research and analysis of keywords",
+            "Developed engaging, keyword-optimized content for blogs, websites, and social media",
+            "Managing technical website and social media content for B2B (SAAS) clients"
+        ],
         imageSrc: "/assets/pencils_cup_1769575198083.png",
-        buttonText: "See SEO Work"
+        buttonText: "See Technical Work"
     },
     {
         title: "Senior Content Writer",
-        description: "Seeds of Innocens (July 2023 - April 2024). Managed website content (Blogs, Landing Pages) and implemented social media content calendars.",
+        description: [
+            "Seeds of Innocens (July 2023 - April 2024)",
+            "Website Content Management - Hindi and English",
+            "Handling social media platforms, creating and curating content (Online & Offline)",
+            "Develop and implement a content calendar as per marketing goals",
+            "Managing coordination for offline campaigns related to designs or marketing materials"
+        ],
         imageSrc: "/assets/desk_setup_1769575212232.png",
         buttonText: "View Strategy"
     },
     {
-        title: "Content Coordinator",
-        description: "TaCa Healthcare (June 2022 - June 2023). Managed social media handles, planned corporate events, and created SEO-friendly web content.",
+        title: "Content Writer",
+        description: [
+            "TaCa Healthcare (June 2022 - June 2023)",
+            "Web page, Social media specific and SEO friendly content",
+            "Conducting training sessions and managing social media promotion calendars",
+            "Overseeing the design and implementation of new brand concepts",
+            "Record management of media coverage and social media handles",
+            "Planning & promoting corporate event"
+        ],
         imageSrc: "/assets/orange_lamp_1769577532378.png",
-        buttonText: "View Projects"
+        buttonText: "View Content"
+    },
+    {
+        title: "Executive Program Associate",
+        description: [
+            "Visual Eyez (Feb 2021 - May 2022)",
+            "Worked on RFPs & website content",
+            "Planning and management of Community Eye health program",
+            "Data management of the project",
+            "Researching for competitors in the market",
+            "Handling management of the organization"
+        ],
+        imageSrc: "/assets/team_avatars_1769577549967.png",
+        buttonText: "View Project"
     }
 ];
 
@@ -42,7 +87,7 @@ export default function SliderSection() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prev) => prev + 1);
-        }, 3000);
+        }, 5000); // Increased duration to allow reading (3s -> 5s)
 
         return () => clearInterval(interval);
     }, []);
@@ -99,7 +144,11 @@ export default function SliderSection() {
                                 <div className={styles.content}>
                                     <div className="gradient-line"></div>
                                     <h2 className={styles.title}>{slide.title}</h2>
-                                    <p className={styles.description}>{slide.description}</p>
+                                    <ul className={styles.description}>
+                                        {slide.description.map((point, i) => (
+                                            <li key={i}>{point}</li>
+                                        ))}
+                                    </ul>
                                     <button className="btn btn-primary">{slide.buttonText}</button>
                                 </div>
                             </div>

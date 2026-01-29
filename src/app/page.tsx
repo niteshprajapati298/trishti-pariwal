@@ -19,8 +19,15 @@ export default function Home() {
       <ClientMarquee />
 
       <ContentSection
-        title="Professional Summary"
-        text="A dedicated and detail-oriented professional contributing abilities and skills to dynamic organizations. I specialize in enhancing content strategy through comprehensive research, keyword analysis, and new ideas, backed by a strong academic background in Public Health and Botany."
+        title="What Can I Bring To The Table?"
+        text={[
+          "Website Content",
+          "Blog Posts",
+          "Social Media Updates/Copywriting",
+          "SEO Optimized Content",
+          "Editing Content",
+          "Content Strategy"
+        ]}
       />
 
       <FeatureSection

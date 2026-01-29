@@ -7,11 +7,10 @@ export default function Hero() {
             <div className={`container ${styles.grid}`}>
                 <div className={styles.content}>
                     <h1 className={styles.heading}>
-                        Content Strategy <br />
-                        & Data Insights
+                        Content Strategist & Manager
                     </h1>
                     <p className={styles.subheading}>
-                        Detail-oriented professional aiming to enhance content strategy with exceptional SEO skills and analytical precision using PowerBI & Tableau.
+                        A skilled content writer with a passion for storytelling and a background in healthcare & research. My writing style is marked by clarity, conciseness, and attention to detail. With experience in creating content for various industries, I have excelled in crafting engaging and informative articles, blog posts, and social media updates. I am dedicated to continuous learning and growth, staying up-to-date with industry trends to deliver impactful content that drives results.
                     </p>
                     <button className="btn btn-primary">
                         View Experience &darr;
