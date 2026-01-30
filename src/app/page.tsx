@@ -5,6 +5,7 @@ import ContentSection from '@/components/ContentSection';
 import TeamSection from '@/components/TeamSection';
 import SliderSection from '@/components/SliderSection';
 import ClientMarquee from '@/components/ClientMarquee';
+import ParallaxCards from '@/components/ParallaxCards';
 import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
@@ -18,17 +19,7 @@ export default function Home() {
 
       <ClientMarquee />
 
-      <ContentSection
-        title="What Can I Bring To The Table?"
-        text={[
-          "Website Content",
-          "Blog Posts",
-          "Social Media Updates/Copywriting",
-          "SEO Optimized Content",
-          "Editing Content",
-          "Content Strategy"
-        ]}
-      />
+      <ParallaxCards />
 
       <FeatureSection
         title="Data Analytics & Research"
