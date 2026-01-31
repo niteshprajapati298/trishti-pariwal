@@ -42,7 +42,8 @@
 .track {
     display: flex;
     width: max-content;
-    animation: scroll 30s linear infinite;
+    animation: scroll 40s linear infinite;
+    /* Slower scroll for larger items */
 }
 
 @keyframes scroll {
@@ -53,21 +54,26 @@
     100% {
         transform: translateX(-50%);
     }
-
-    /* Move half way if doubled list */
 }
 
 .card {
     flex-shrink: 0;
-    width: 280px;
+    width: 250px;
+    /* Slightly narrower but taller maybe? */
+    height: 220px;
+    /* Fixed height for consistency */
     background: white;
     margin: 0 1.5rem;
     padding: 1.5rem;
     border-radius: 12px;
     display: flex;
+    flex-direction: column;
+    /* Vertical stack */
     align-items: center;
+    justify-content: space-between;
+    /* specific spacing */
     gap: 1rem;
-    text-align: left;
+    text-align: center;
     transition: all 0.3s ease;
     text-decoration: none;
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -81,14 +87,15 @@
 }
 
 .logoWrapper {
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 120px;
+    /* Increased height significantly */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     overflow: hidden;
-    /* Optional rounded background or separate logic */
+    padding: 10px;
 }
 
 .logo {
@@ -100,36 +107,29 @@
 }
 
 .initials {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--coral), var(--heading));
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     flex-shrink: 0;
 }
 
 .info {
-    flex-grow: 1;
-    overflow: hidden;
-}
-
-.name {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--heading);
-    margin-bottom: 0.25rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    border-top: 1px solid #f3f4f6;
 }
 
 .linkText {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--coral);
     font-weight: 600;
     text-transform: uppercase;

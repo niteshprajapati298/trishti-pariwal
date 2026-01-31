@@ -8,7 +8,8 @@
 
 .sliderContainer {
     position: relative;
-    height: 600px;
+    height: 750px;
+    /* Increased height for larger images */
     /* Fixed height container to hold absolute slides. Adjust as needed responsive. */
     /* If content height varies, this might need to be flexible or JS-calculated, but fixed is safest for simple CSS sliders */
 }

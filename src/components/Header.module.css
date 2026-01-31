@@ -1,12 +1,10 @@
 .header {
-    background: rgba(255, 255, 255, 0.85);
-    /* Translucent */
-    backdrop-filter: blur(12px);
-    /* Glass effect */
-    -webkit-backdrop-filter: blur(12px);
+    background: white;
+    /* Solid background */
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     /* Softer border */
-    padding: 1.5rem 0;
+    padding: 0.8rem 0;
+    /* Reduced padding */
     width: 100%;
     position: sticky;
     /* Make it sticky */
@@ -27,7 +25,7 @@
 }
 
 .logo {
-    font-size: 3rem;
+    font-size: 2.2rem;
     /* Increase size for cursive readability */
     font-weight: 400;
     /* Cursive doesn't need bold usually */

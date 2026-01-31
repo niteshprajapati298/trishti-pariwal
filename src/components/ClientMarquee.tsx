@@ -15,12 +15,12 @@ const clients: Client[] = [
     { name: "Nirantara", url: "https://www.nirantara.solutions/esg", image: "/assets/nirantara.png" },
     { name: "Vbet", url: "https://www.vbet.com/", image: "/assets/vbet.svg" },
     { name: "Tanmantras", url: "https://tanmantras.in/", image: "/assets/tamanas.avif" },
-    { name: "Followers Rich", url: "https://followersrich.com/", image: "/assets/Followers-rich.webp" },
+    { name: "Followers Rich", url: "https://followersrich.com/", image: "/assets/followers-rich.jpg" },
     { name: "Sociofire", url: "https://sociofire.com/", image: "/assets/Socio-Fire-Logo.png" },
     { name: "Victory EV India", url: "https://victoryevindia.com/", image: "/assets/victory.png" },
     { name: "Yatharth Hospitals", url: "https://www.yatharthhospitals.com/", image: "/assets/yatharth.png" },
     { name: "Chocomohh", url: "https://chocomohh.com/", image: "/assets/Chocomoh.png" },
-    { name: "Caffe Sicily", url: "https://www.caffesicily.in/", image: "" }, // No image provided
+    { name: "Caffe Sicily", url: "https://www.caffesicily.in/", image: "/assets/cafe-sicilic.jpg" },
     { name: "Yes Germany", url: "https://www.yesgermany.com/", image: "/assets/yes-germany.png" },
 ];
 
@@ -50,8 +50,8 @@ export default function ClientMarquee() {
                                     <Image
                                         src={client.image}
                                         alt={client.name}
-                                        width={100}
-                                        height={60}
+                                        width={180}
+                                        height={120}
                                         className={styles.logo}
                                         style={{ objectFit: 'contain' }}
                                     />
@@ -62,7 +62,7 @@ export default function ClientMarquee() {
                                 )}
                             </div>
                             <div className={styles.info}>
-                                <h4 className={styles.name}>{client.name}</h4>
+                                {/* Name removed as per request */}
                                 <span className={styles.linkText}>Visit Website &rarr;</span>
                             </div>
                         </a>

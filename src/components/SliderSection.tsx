@@ -9,6 +9,7 @@ interface SlideData {
     description: string[];
     imageSrc: string;
     buttonText: string;
+    link: string;
 }
 
 const originalSlides: SlideData[] = [
@@ -22,8 +23,9 @@ const originalSlides: SlideData[] = [
             "Partnered with internal stakeholders and external clients",
             "Owned social media presence end-to-end"
         ],
-        imageSrc: "/assets/hero_workspace_1769575183849.png",
-        buttonText: "View Leadership"
+        imageSrc: "/applore-tech.png",
+        buttonText: "View Content",
+        link: "https://www.apploretechnologies.com/"
     },
     {
         title: "Technical Content Lead",
@@ -34,8 +36,9 @@ const originalSlides: SlideData[] = [
             "Developed engaging, keyword-optimized content for blogs, websites, and social media",
             "Managing technical website and social media content for B2B (SAAS) clients"
         ],
-        imageSrc: "/assets/pencils_cup_1769575198083.png",
-        buttonText: "See Technical Work"
+        imageSrc: "/socio-greek.png",
+        buttonText: "View Content",
+        link: "https://sociogreek.com/"
     },
     {
         title: "Senior Content Writer",
@@ -46,8 +49,9 @@ const originalSlides: SlideData[] = [
             "Develop and implement a content calendar as per marketing goals",
             "Managing coordination for offline campaigns related to designs or marketing materials"
         ],
-        imageSrc: "/assets/desk_setup_1769575212232.png",
-        buttonText: "View Strategy"
+        imageSrc: "/seed-ivf.png",
+        buttonText: "View Content",
+        link: "https://www.seedsofinnocens.com/"
     },
     {
         title: "Content Writer",
@@ -59,8 +63,9 @@ const originalSlides: SlideData[] = [
             "Record management of media coverage and social media handles",
             "Planning & promoting corporate event"
         ],
-        imageSrc: "/assets/orange_lamp_1769577532378.png",
-        buttonText: "View Content"
+        imageSrc: "/taca-healthcare.png",
+        buttonText: "View Content",
+        link: "https://tacahealthcare.com/"
     },
     {
         title: "Executive Program Associate",
@@ -72,8 +77,9 @@ const originalSlides: SlideData[] = [
             "Researching for competitors in the market",
             "Handling management of the organization"
         ],
-        imageSrc: "/assets/team_avatars_1769577549967.png",
-        buttonText: "View Project"
+        imageSrc: "/visual-eyez.png",
+        buttonText: "View Content",
+        link: "https://visualeyezindia.com/"
     }
 ];
 
@@ -135,8 +141,8 @@ export default function SliderSection() {
                                         <Image
                                             src={slide.imageSrc}
                                             alt={slide.title}
-                                            width={500}
-                                            height={500}
+                                            width={800}
+                                            height={800}
                                             className={styles.image}
                                         />
                                     </div>
@@ -149,7 +155,14 @@ export default function SliderSection() {
                                             <li key={i}>{point}</li>
                                         ))}
                                     </ul>
-                                    <button className="btn btn-primary">{slide.buttonText}</button>
+                                    <a
+                                        href={slide.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn btn-primary"
+                                    >
+                                        {slide.buttonText}
+                                    </a>
                                 </div>
                             </div>
                         </div>
