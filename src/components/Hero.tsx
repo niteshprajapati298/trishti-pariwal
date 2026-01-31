@@ -19,10 +19,10 @@ export default function Hero() {
                 <div className={styles.imageWrapper}>
                     <div className={styles.imageFrame}>
                         <Image
-                            src="/assets/content-writeer.png"
+                            src="/assets/trishti.jpeg"
                             alt="Workspace"
-                            width={600}
-                            height={500}
+                            width={800}
+                            height={700}
                             priority
                             className={styles.image}
                         />
