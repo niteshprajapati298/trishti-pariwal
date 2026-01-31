@@ -36,11 +36,6 @@ export default function ImageFeatureSection() {
                     <div className="gradient-line"></div>
 
                     <h2 className={styles.heading}>Social Media Posts & Reels</h2>
-
-                    <p className={styles.topText}>
-                        I specialize in crafting compelling digital narratives that drive engagement and growth.
-                        From SEO-optimized blog posts to strategic social media campaigns, I ensure every piece of content serves a purpose.
-                    </p>
                 </div>
 
                 <div className={styles.sliderWrapper}>
