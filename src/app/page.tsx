@@ -5,6 +5,7 @@ import ContentSection from '@/components/ContentSection';
 
 import SliderSection from '@/components/SliderSection';
 import ClientMarquee from '@/components/ClientMarquee';
+import ServicesSection from '@/components/ServicesSection';
 import ImageFeatureSection from '@/components/ImageFeatureSection';
 import FooterContactSection from '@/components/FooterContactSection';
 
@@ -16,6 +17,8 @@ export default function Home() {
       <SliderSection />
 
       <ClientMarquee />
+
+      <ServicesSection />
 
       <ImageFeatureSection />
 

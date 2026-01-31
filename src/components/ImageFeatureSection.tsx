@@ -35,7 +35,7 @@ export default function ImageFeatureSection() {
                 <div className={styles.contentContainer}>
                     <div className="gradient-line"></div>
 
-                    <h2 className={styles.heading}>What Can I Bring To The Table?</h2>
+                    <h2 className={styles.heading}>Social Media Posts & Reels</h2>
 
                     <p className={styles.topText}>
                         I specialize in crafting compelling digital narratives that drive engagement and growth.
@@ -58,17 +58,6 @@ export default function ImageFeatureSection() {
                             </div>
                         ))}
                     </div>
-                </div>
-
-                <div className={styles.contentContainer}>
-                    <p className={styles.bottomText}>
-                        My approach combines creative storytelling with data-driven insights.
-                        Whether it's managing a content team or executing a solo project, I bring dedication, precision, and a fresh perspective to every task.
-                    </p>
-
-                    <button className={styles.button}>
-                        View Services <span>&rarr;</span>
-                    </button>
                 </div>
             </div>
         </section>

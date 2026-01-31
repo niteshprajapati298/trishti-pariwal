@@ -21,8 +21,8 @@ export default function Hero() {
                         <Image
                             src="/assets/trishti.jpeg"
                             alt="Workspace"
-                            width={800}
-                            height={700}
+                            width={700}
+                            height={600}
                             priority
                             className={styles.image}
                         />
