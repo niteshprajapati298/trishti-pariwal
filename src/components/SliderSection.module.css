@@ -1,7 +1,7 @@
 .section {
-    background: var(--gray-100);
-    padding: 4rem 0;
-    /* Match section padding */
+    background: var(--bg-cool);
+    padding: 3rem 0;
+    /* Reduced padding */
     overflow: hidden;
     /* Hide sliding overflow */
 }

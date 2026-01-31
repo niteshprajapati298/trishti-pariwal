@@ -1,6 +1,6 @@
 .section {
-    background: white;
-    padding: 4rem 0 6rem;
+    background: var(--bg-accent-subtle);
+    padding: 2rem 0 3rem;
     overflow: hidden;
     text-align: center;
 }
@@ -62,7 +62,8 @@
     /* Slightly narrower but taller maybe? */
     height: 220px;
     /* Fixed height for consistency */
-    background: white;
+    background: linear-gradient(145deg, #ffffff, #F0F9FF);
+    /* Subtle gradient */
     margin: 0 1.5rem;
     padding: 1.5rem;
     border-radius: 12px;

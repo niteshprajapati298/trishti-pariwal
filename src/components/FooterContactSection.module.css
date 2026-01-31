@@ -1,5 +1,5 @@
 .section {
-    padding: 6rem 0 4rem;
+    padding: 3rem 0 2rem;
     background: white;
     font-family: var(--font-lato), sans-serif;
 }
@@ -21,9 +21,10 @@
 }
 
 .branding {
-    font-family: var(--font-playfair), serif;
-    /* Using site's font */
-    font-size: 2.5rem;
+    font-family: var(--font-cursive), cursive;
+    /* Using site's cursive font */
+    font-size: 3.5rem;
+    /* Larger for cursive legibility */
     color: var(--heading);
     margin-bottom: 4rem;
 }
@@ -159,7 +160,8 @@
     color: white;
     border: none;
     padding: 1rem 2rem;
-    border-radius: 50px;
+    border-radius: 8px;
+    /* Reduced radius */
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;

@@ -1,18 +1,14 @@
 .header {
-    background: white;
-    /* Solid background */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    /* Softer border */
+    background: rgba(255, 255, 255, 0.7);
+    /* Translucent for glass effect */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
     padding: 0.8rem 0;
-    /* Reduced padding */
     width: 100%;
     position: sticky;
-    /* Make it sticky */
     top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
-    /* Very subtle shadow */
-    transition: all 0.3s ease;
+    z-index: 999;
 }
 
 .container {
@@ -25,20 +21,19 @@
 }
 
 .logo {
-    font-size: 2.2rem;
-    /* Increase size for cursive readability */
+    font-size: 3rem;
+    /* Increased for cursive */
     font-weight: 400;
-    /* Cursive doesn't need bold usually */
-    background: linear-gradient(to right, var(--coral), var(--heading));
+    /* Gradient Text */
+    background: var(--gradient-primary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 0;
-    text-transform: none;
+    /* Cursive usually needs normal spacing */
     margin: 0;
     font-family: var(--font-cursive);
     /* Great Vibes */
-    padding-bottom: 0.5rem;
-    padding-right: 1rem;
-    /* Ensure descenders don't get cut if overflow hidden */
+    padding-bottom: 0.2rem;
+    padding-right: 0.5rem;
 }

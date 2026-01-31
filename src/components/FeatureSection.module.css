@@ -1,5 +1,6 @@
 .section {
-    background: var(--gray-100);
+    background: var(--bg-accent-subtle);
+    padding: 3rem 0;
 }
 
 .grid {

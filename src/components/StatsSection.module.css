@@ -1,5 +1,6 @@
 .section {
-    background: white;
+    background: var(--bg-alt);
+    padding: 3rem 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
