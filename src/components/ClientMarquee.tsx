@@ -10,7 +10,7 @@ interface Client {
 const clients: Client[] = [
     { name: "SquadXP", url: "https://www.squadxp.com/", image: "/assets/squad-logo.webp" },
     { name: "Caller Digital", url: "https://www.caller.digital/", image: "/assets/caller-digital.webp" },
-    { name: "CSL Finance", url: "https://www.cslfinance.in/", image: "/assets/csl.png" },
+    { name: "CSL Finance", url: "https://www.cslfinance.in/", image: "/assets/csl-finance.jpg" },
     { name: "CSL Foundation", url: "https://cslfoundation.in/", image: "/assets/csl.png" },
     { name: "Nirantara", url: "https://www.nirantara.solutions/esg", image: "/assets/nirantara.png" },
     { name: "Vbet", url: "https://www.vbet.com/", image: "/assets/vbet.svg" },

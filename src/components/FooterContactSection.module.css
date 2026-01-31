@@ -1,7 +1,9 @@
 .section {
     padding: 3rem 0 2rem;
-    background: white;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 27, 75, 0.9) 100%);
+    /* Reduced opacity (0.9) */
     font-family: var(--font-lato), sans-serif;
+    color: white;
 }
 
 .container {
@@ -25,13 +27,14 @@
     /* Using site's cursive font */
     font-size: 3.5rem;
     /* Larger for cursive legibility */
-    color: var(--heading);
+    color: white;
     margin-bottom: 4rem;
 }
 
 .contactInfo {
     margin-top: auto;
-    color: var(--heading);
+    color: #e2e8f0;
+    /* Light gray */
     font-size: 0.95rem;
     line-height: 1.6;
 }
@@ -47,7 +50,8 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-style: normal;
-    color: var(--foreground);
+    color: #cbd5e1;
+    /* Muted light gray */
 }
 
 .socials {
@@ -59,7 +63,9 @@
 .socialIcon {
     width: 24px;
     height: 24px;
-    background-color: var(--heading);
+    width: 24px;
+    height: 24px;
+    background-color: white;
     /* Placeholder for icon */
     border-radius: 50%;
     /* Replace with actual SVGs in component */
@@ -80,7 +86,7 @@
 
 .formTitle {
     font-size: 1.5rem;
-    color: var(--heading);
+    color: white;
     font-weight: 400;
 }
 
@@ -114,7 +120,7 @@
 
 .label {
     font-size: 0.9rem;
-    color: var(--heading);
+    color: white;
     font-weight: 600;
 }
 
@@ -125,15 +131,17 @@
 
 .input {
     border: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0.5rem 0;
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s;
+    background: transparent;
+    color: white;
 }
 
 .input:focus {
-    border-bottom-color: var(--heading);
+    border-bottom-color: white;
 }
 
 .checkboxGroup {
@@ -151,7 +159,7 @@
 
 .checkboxLabel {
     font-size: 0.9rem;
-    color: var(--heading);
+    color: #cbd5e1;
 }
 
 .submitButton {
@@ -180,7 +188,7 @@
     flex-direction: column;
     gap: 0.5rem;
     font-size: 0.85rem;
-    color: var(--foreground);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 768px) {

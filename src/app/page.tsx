@@ -25,7 +25,7 @@ export default function Home() {
 
       <FooterContactSection />
 
-      <div style={{ height: '4rem' }}></div> {/* Spacer */}
+
     </main>
   );
 }

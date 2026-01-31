@@ -19,7 +19,7 @@ export default function Hero() {
                 <div className={styles.imageWrapper}>
                     <div className={styles.imageFrame}>
                         <Image
-                            src="/assets/hero_workspace_1769575183849.png"
+                            src="/assets/content-writeer.png"
                             alt="Workspace"
                             width={600}
                             height={500}

@@ -1,5 +1,6 @@
 .hero {
-    background: var(--coral);
+    background: linear-gradient(135deg, rgba(255, 81, 47, 0.85) 0%, rgba(221, 36, 118, 0.85) 100%);
+    /* Reduced opacity gradient */
     min-height: 92vh;
     /* Increased from 80vh to nearly full screen */
     display: flex;
